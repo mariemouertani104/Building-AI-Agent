@@ -99,15 +99,26 @@ After training, the learned path and its visualization are displayed.
 
 ---
 
-## Possible extensions
+## Experimental results
 
-- Add moving obstacles
-- Introduce a penalty for hitting an obstacle
-- Change the reward structure
-- Use a larger grid
-- Replace Q-learning with a neural network (DQN)
+After training, the learned policy is evaluated over several test episodes.
 
----
+For each episode, the following metrics are measured:
+
+- number of steps required to reach the goal
+- total accumulated reward
+
+The final results are reported as the average over multiple evaluation runs.
+
+The evaluation is performed using a greedy policy derived from the learned Q-table (no exploration).
+
+The visualization of one representative episode is also displayed to illustrate the learned trajectory.
+
+These simple metrics allow evaluating:
+
+- the efficiency of the learned path
+- the stability of the learned policy
+
 
 ## Author
 
